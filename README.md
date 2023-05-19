@@ -22,9 +22,9 @@ json自动生成model（json格式化校验）
 ##示例图片
 
 <div >
-<img src = "https://github.com/wkwl/ImageSpec/blob/master/JsonProject/jsonCheck.png" width="400" />
+<img src = "https://github.com/wkwl/ImageSpec/blob/master/JsonProject/jsonCheck.png" width="480" />
 
-<img src = "https://github.com/wkwl/ImageSpec/blob/master/JsonProject/modelH.png" width="400" />
+<img src = "https://github.com/wkwl/ImageSpec/blob/master/JsonProject/modelH.png" width="480" />
 
-<img src = "https://github.com/wkwl/ImageSpec/blob/master/JsonProject/modelM.png" width="400" />
+<img src = "https://github.com/wkwl/ImageSpec/blob/master/JsonProject/modelM.png" width="480" />
 </div>
