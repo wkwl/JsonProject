@@ -235,7 +235,7 @@
 - (BOOL)isError {
     NSString *jsonString = self.inputTextView.string;
     NSError *error = nil;
-    NSDictionary *dic =  [NSJSONSerialization JSONObjectWithData:[jsonString dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
+    [NSJSONSerialization JSONObjectWithData:[jsonString dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
     if(error){
         self.outTextView.string = error.userInfo.description;
         self.outTextView.textColor = [NSColor redColor];
