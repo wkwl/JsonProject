@@ -276,6 +276,7 @@
                                NSForegroundColorAttributeName: [NSColor blackColor],
     };
     
+    /** 正则匹配双引号之间的文本内容（包含双引号）*/
     NSString *regS =@"\".*?\"";
     NSRegularExpression *reg = [NSRegularExpression regularExpressionWithPattern:regS options:0 error:NULL];
     NSArray<NSTextCheckingResult *> *ranges = [reg matchesInString:jsonString options:0 range:NSMakeRange(0, [jsonString length])];
@@ -283,6 +284,7 @@
     NSMutableAttributedString *attStr = [[NSMutableAttributedString alloc] initWithString:jsonString attributes:@{NSForegroundColorAttributeName:[NSColor blackColor]}];
     [attStr addAttributes:attrDict range:NSMakeRange(0, jsonString.length-1)];
     
+    /**设置双引号包含的内容文本字体颜色**/
     for (int i = 0; i < ranges.count; i++) {
         [attStr setAttributes:@{NSForegroundColorAttributeName:[NSColor colorWithCalibratedRed:154/255.0 green:0 blue:18/255.0 alpha:1.0],NSFontAttributeName:[NSFont systemFontOfSize:14]} range:ranges[i].range];
     }
