@@ -14,7 +14,7 @@ json自动生成model（json格式化校验）
 
 2.点击生成.h会自动生成.h中的属性内容。
 
-3.点击生成.m会自动生成json转model的代码（需配合工程里的NSObject+Model.h 和NSObject+Model.m使用）
+3.点击生成.m会自动生成json转model代码（需配合工程里的NSObject+Model.h和NSObject+Model.m使用）
 
 
 ```
